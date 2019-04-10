@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "a383a7ec-73e9-4a2d-ba90-76d3db409330",
+		"name": "Quarkus Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"firstName\": \"loïc\",\n\t\"lastName\": \"mathieu\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/persons",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/persons",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get person with id 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/persons/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update person with id 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"firstName\": \"loïc\",\n\t\"lastName\": \"mathieu-updated\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/persons/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete person with id 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/persons/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
