@@ -1,4 +1,4 @@
-package fr.loicmathieu.demo.quarkus.res;
+package fr.loicmathieu.demo.quarkus.rest;
 
 import io.quarkus.test.junit.SubstrateTest;
 
