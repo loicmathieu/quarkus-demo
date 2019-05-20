@@ -9,7 +9,7 @@
 ###
 
 ## Stage 1 : build with maven builder image with native capabilities
-FROM quay.io/quarkus/centos-quarkus-maven AS build
+FROM quay.io/quarkus/centos-quarkus-maven:graalvm-1.0.0-rc15 AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 # we will build a native image using the native maven profile
