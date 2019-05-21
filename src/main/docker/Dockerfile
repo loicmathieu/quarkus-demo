@@ -13,7 +13,7 @@ FROM quay.io/quarkus/centos-quarkus-maven:graalvm-1.0.0-rc15 AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 # we will build a native image using the native maven profile
-RUN mvn -f /usr/src/app/pom.xml -DskipTests -Pnative clean package
+RUN mvn -f /usr/src/app/pom.xml -Pnative clean package
 
 ## Stage 2 : create the docker final image form a distroless image !
 FROM cescoffier/native-base

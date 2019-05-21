@@ -44,10 +44,17 @@
       <artifactId>quarkus-jdbc-postgresql</artifactId>
     </dependency>
 
+
     <!-- tests -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-test-h2</artifactId>
+      <version>${quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
